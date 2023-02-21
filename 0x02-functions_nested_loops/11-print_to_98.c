@@ -9,6 +9,8 @@
 /**
  * print -prints all natural numbers from n to 98
  *
+ * descritption - print  "n"
+ *
  * Return: 0
  */
 
