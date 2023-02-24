@@ -10,7 +10,7 @@
  * main -prints the numbers from 1 to 100
  *  But for multiples of three print Fizz
  *
- *  Return: 0
+ * Return: 0
  */
 int main(void)
 {
@@ -33,7 +33,9 @@ int main(void)
 		if (num == 100)
 			continue;
 		printf(" ");
+	}
 
-		Return (0);
-
+		return (0);
 }
+
+
