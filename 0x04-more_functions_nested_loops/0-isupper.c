@@ -8,27 +8,16 @@
 
 /**
  * _isupper -checks for uppercase character
- *@c: character to be check
+ * @c:character to be checked
+ *
  * Return: 0
  */
 int _isupper(int c)
 {
-
-	int hash, index;
-
-	if (size > 0)
+	if (c >= 'A' && c <= 'Z')
 	{
-		for (hash = 1; hash <= size; hash++)
-		{
-			for (index = size - hash; index > 0; index--)
-				_putchar(' ');
-
-			for (index = 0; index < hash; index++)
-				_putchar('#');
-
-			if (hash == size)
-				continue;
-
-			_putchar('\n');
-		}
+		return (1);
+	}
+	else
+		return (0);
 }
