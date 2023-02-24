@@ -8,18 +8,13 @@
 
 /**
  * mul -multiplies two integers
- * @c: The character to be checked
- * @a: multiplies two integers
+ * @a: character to be multiplied
+ * @b: character to multiplied
  *
  * Return: 0
  */
-int mul(int a, int c)
+int mul(int a, int b)
 {
-
-	if (c >= 'A' && c <= 'Z')
-		return (1);
-
-	else
-		return (0);
+	return (a*b);
 
 }
