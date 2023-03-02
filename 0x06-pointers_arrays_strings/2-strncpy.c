@@ -19,7 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	int let = 0, src_num = 0;
 
-	while (src[let++]);
+	while(src[let++]);
 		src_num++;
 
 	for (let = 0; src[let] && let < n; let++)
