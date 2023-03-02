@@ -17,16 +17,16 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 
-	int let = 0, src_num = 0;
+	int index = 0, src_len = 0;
 
-	while(src[let++]);
-		src_num++;
+	while (src[index++])
+		src_len++;
 
-	for (let = 0; src[let] && let < n; let++)
-		dest[let] = src[let];
+	for (index = 0; src[index] && index < n; index++)
+		dest[index] = src[index];
 
-	for (let = src_num; let  < n; let++)
-		dest[let] = '\0';
+	for (index = src_len; index < n; index++)
+		dest[index] = '\0';
 
 	return (dest);
 }
