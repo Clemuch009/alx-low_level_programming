@@ -1,20 +1,19 @@
 /*
  * File1
- * write
+ * author
  */
 
 #include "main.h"
 
 /**
- *_ strcat - concatenates two strings
- * @dest: A pointer to the string to be concatenated upon.
- * @src: The source string to be appended to @dest.
+ * strcat -Concatenates the string pointer
+ * @dest: Apointer
+ * @src:pointer
  *
  * Return: A pointer to the destination string @dest.
  */
 char *strcat(char *dest, const char *src)
 {
-
 	int index = 0, dest_len = 0;
 
 	while (dest[index++])
@@ -25,4 +24,3 @@ char *strcat(char *dest, const char *src)
 
 	return (dest);
 }
-
