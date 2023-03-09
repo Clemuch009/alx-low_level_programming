@@ -20,6 +20,7 @@ int _sqrt_recursion(int n);
  */
 int _sqrt_recursion(int n)
 {
+	int root, num;
 
 	if ((root * root) == num)
 		return (root);
@@ -36,7 +37,9 @@ int _sqrt_recursion(int n)
  *
  * Return: nature of square root
  */
-{
+int main(void)
+{ 
+	int n;
 	int root = 0;
 
 	if (n < 0)
@@ -46,3 +49,4 @@ int _sqrt_recursion(int n)
 		return (1);
 
 	return (find_sqrt(n, root));
+}
