@@ -7,21 +7,20 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - returns the length of a string
- * @s: string
+ * _strlen_recursion - Returns the length of a string.
+ * @s: The string to be measured.
  *
- * Return: length of a string
+ * Return: The length of the string.
  */
 int _strlen_recursion(char *s)
 {
-
-	int num = 0;
+	int len = 0;
 
 	if (*s)
 	{
-		num++;
-		num += _strlen_recursion(s + 1);
+		len++;
+		len += _strlen_recursion(s + 1);
 	}
 
-	return (num);
+	return (len);
 }
