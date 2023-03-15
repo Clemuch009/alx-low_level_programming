@@ -10,7 +10,7 @@
 /**
  * alloc_grid -returns a pointer to a 2 dimensional array
  *  of integers
- *  @wight:weight
+ *  @width:weight
  *  @height:height
  *
  * Return: If width <= 0, height <= 0, or the function fails - NULL.
