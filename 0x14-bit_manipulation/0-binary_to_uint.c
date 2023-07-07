@@ -6,27 +6,31 @@
 #include "main.h"
 
 /**
- * binary_to_uint - binary to uint
- * @b:  converted number
- * Return: unsigned int
+ * 
+ * @b:is pointing to a string of 0 and 1 chars
  *
+ * Return: If b is NULL or contains chars not 0 or 1 - 0.
+ *         Otherwise - the converted number.
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int y = 0;
+	unsigned int x  = 0, y = 1;
+	int len;
 
 	if (b == NULL)
 		return (0);
-	while (*b)
-	{
-		if (*b == '1')
-			y = (y << 1) | 1;
-		else if (*b == '0')
-			y <<= 1;
-		else
-			return (0);
-		b++;
-	}
-	return (y);
-}
 
+	for (len = 0; b[len];)
+		len++;
+
+	for (len -= 1; len >= 0; len--)
+	{
+		if (b[len] != '0' && b[len] != '1')
+			return (0);
+
+		x += (b[len] - '0') * y;
+		y *= 2;
+	}
+
+	return (x);
+}
