@@ -2,4 +2,4 @@
 
 gcc -Wall -fPIC -c *.c
 
-gcc -shared -Wl,-soname,libdynamic.so -o libdynamic.so *.o
+gcc -shared -Wl,-soname,liball.so -o liball.so *.o
