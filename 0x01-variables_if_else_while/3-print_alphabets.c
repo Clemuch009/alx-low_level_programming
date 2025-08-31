@@ -6,7 +6,7 @@
 
 #include  <stdio.h>
 
-void main(void)
+int main(void)
 {
 	int i = 97;
 	char c = 'A';
@@ -25,4 +25,6 @@ void main(void)
 		c++;
 	}
 	putchar('\n');
+
+	return (0);
 }
