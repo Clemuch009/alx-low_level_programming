@@ -1,14 +1,15 @@
 /**
- * _strcat - concatenates two strings.
+ * _strncat - concatenates two strings.
  * @dest: pointer to destination.
  * @src: pointer to source.
+ * @n: number of bytes to transfer.
  *
- * Return: pointer to destination.
+ * Return:pointer to destnaition.
  */
 
 #include "main.h"
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
 	int j = 0;
@@ -17,15 +18,19 @@ char *_strcat(char *dest, char *src)
 	{
 		i++;
 	}
+
 	while (src[j] != '\0')
 	{
-		dest[i] = src[j];
+		if (j < n)
+		{
+			dest[i] = src[j];
+		}
 
-		j++;
 		i++;
+		j++;
 	}
-
 	dest[i] = '\0';
 
 	return (dest);
 }
+
