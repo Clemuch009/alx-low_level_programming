@@ -1,0 +1,2 @@
+all structures
+typedef usage
