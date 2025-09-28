@@ -10,6 +10,8 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
+#include <fcntl.h>
+
 int append_text_to_file(const char *filename, char *text_content)
 {
 	ssize_t bytes_written;
